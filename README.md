@@ -1,4 +1,4 @@
-# SMB Links Handler
+# SMB URI Handler
 
 This repository contains scripts for handling SMB (Server Message Block) URIs on both Windows and Linux environments. The scripts provide functionality to open SMB URIs in file explorers and copy Windows file paths as SMB URIs for directories and files.
 
