@@ -24,8 +24,7 @@ if "!inputPath:~1,1!" equ ":" (
 rem DEBUG output
 echo !uri!
 
-rem Output the converted URI
-echo !uri! | clip
+rem Copy the URI to the clipboard, avoiding a new line at the end
+echo | set /p="%uri%" | clip
 
 endlocal
-
