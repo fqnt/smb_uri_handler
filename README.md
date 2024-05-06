@@ -20,9 +20,10 @@ This repository contains scripts for handling SMB (Server Message Block) URIs on
 
 1. **Installation:**
    - Run the `install.bat` script in the `windows` directory to set up the necessary registry entries.
+     (The default installation folder for Windows is `%APPDATA%\smb_uri_handler\scripts`. This location can be changed by modifying the `SCRIPT_INSTALL_PATH` variable in the `install.bat` script.)
 
 2. **Open SMB URIs:**
-   - Click on an SMB link in Firefox to open it in Windows Explorer.
+   - Click on an SMB link in e.g. Firefox to open it in Windows Explorer
 
 3. **Copy Windows Paths as SMB URIs:**
    - Right-click on a directory or file.

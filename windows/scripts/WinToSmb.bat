@@ -3,6 +3,14 @@ setlocal ENABLEDELAYEDEXPANSION
 
 set "inputPath=%~1"
 
+rem Check if the path is a local path (drive letter or UNC path)
+if "!inputPath:~1,1!" equ ":" (
+    rem Check if it's a network drive and replace the drive letter with the network path
+    for /f "tokens=2 delims= " %%A in ('net use %inputPath:~0,2% ^| find "\\"') do (
+        set "inputPath=%%A!inputPath:~2!"
+    )
+)
+
 rem Convert backslashes to forward slashes
 set "inputPath=!inputPath:\=/!"
 

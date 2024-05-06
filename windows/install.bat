@@ -1,7 +1,7 @@
 REM @echo off
 SETLOCAL ENABLEDELAYEDEXPANSION
 
-SET SCRIPT_INSTALL_PATH=%USERPROFILE%\scripts\smb_links
+SET SCRIPT_INSTALL_PATH=%APPDATA%\smb_uri_handler\scripts
 SET SCRIPT_PATH=scripts
 
 REM Check if SCRIPT_INSTALL_PATH exists, create if not
